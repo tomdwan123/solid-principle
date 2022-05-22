@@ -5,11 +5,11 @@ package com.phucdevs.solid;
  */
 public class ShapesPrinterSolid {
 
-    public String json(int sum) {
+    public String json(double sum) {
         return String.format("{shapesSum: %s}", sum);
     }
 
-    public String csv(int sum) {
+    public String csv(double sum) {
         return String.format("shapes_sum, %s", sum);
     }
 }

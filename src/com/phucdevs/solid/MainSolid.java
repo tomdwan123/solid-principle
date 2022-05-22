@@ -11,8 +11,14 @@ public class MainSolid {
         AreaCalculatorSolid areaCalculatorSolid = new AreaCalculatorSolid();
         CircleSolid circleSolid = new CircleSolid(10);
         SquareSolid squareSolid = new SquareSolid(10);
+        CubeSolid cubeSolid = new CubeSolid();
+        RectangleSolid rectangleSolid = new RectangleSolid();
         ShapesPrinterSolid printer = new ShapesPrinterSolid();
-        List<Object> shapes = List.of(circleSolid, squareSolid);
+        List<Shape> shapes = List.of(
+                circleSolid,
+                squareSolid,
+                cubeSolid,
+                rectangleSolid);
         int sum = areaCalculatorSolid.sum(shapes);
         System.out.println(printer.json(sum));
         System.out.println(printer.csv(sum));
