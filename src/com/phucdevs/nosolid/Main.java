@@ -1,4 +1,4 @@
-package com.phucdevs.solid.nosolid;
+package com.phucdevs.nosolid;
 import java.util.List;
 
 /**
