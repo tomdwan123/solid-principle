@@ -13,8 +13,10 @@ public class MainSolid {
         SquareSolid squareSolid = new SquareSolid(10);
         CubeSolid cubeSolid = new CubeSolid();
         RectangleSolid rectangleSolid = new RectangleSolid();
+        NoShape noShape = new NoShape();
         ShapesPrinterSolid printer = new ShapesPrinterSolid();
         List<Shape> shapes = List.of(
+                noShape,
                 circleSolid,
                 squareSolid,
                 cubeSolid,
