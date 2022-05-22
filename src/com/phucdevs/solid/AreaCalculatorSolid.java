@@ -5,11 +5,7 @@ import java.util.List;
 /**
  * @author Phuc.Le
  */
-public class AreaCalculatorSolid {
+public interface AreaCalculatorSolid {
 
-    public int sum(List<Shape> shapes) {
-        return shapes.stream()
-                .mapToInt(s -> (int) Math.round(s.area()))
-                .sum();
-    }
+    int sum(List<Shape> shapes);
 }
